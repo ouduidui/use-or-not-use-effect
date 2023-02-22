@@ -37,6 +37,20 @@ export default defineConfig({
         { mobx: ['configure'] },
         { react: ['createContext'] },
         { 'mobx-react-lite': ['observer'] },
+        {
+          '@uiw/react-codemirror': [
+            ['default', 'CodeMirror'],
+          ],
+        },
+        {
+          '@uiw/codemirror-extensions-langs': ['langs'],
+        },
+        {
+          '@uiw/codemirror-theme-xcode': ['xcodeLight', 'xcodeDark'],
+        },
+        {
+          '@uiw/codemirror-theme-github': ['githubLight', 'githubDark'],
+        },
       ],
       dts: 'src/auto-imports.d.ts',
     }),

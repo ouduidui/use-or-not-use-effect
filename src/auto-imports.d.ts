@@ -3,6 +3,7 @@
 declare global {
   const action: typeof import('mobx')['action']
   const autorun: typeof import('mobx')['autorun']
+  const CodeMirror: typeof import('@uiw/react-codemirror')['default']
   const computed: typeof import('mobx')['computed']
   const configure: typeof import('mobx')['configure']
   const createContext: typeof import('react')['createContext']
@@ -11,7 +12,10 @@ declare global {
   const flow: typeof import('mobx')['flow']
   const flowResult: typeof import('mobx')['flowResult']
   const forwardRef: typeof import('react')['forwardRef']
+  const githubDark: typeof import('@uiw/codemirror-theme-github')['githubDark']
+  const githubLight: typeof import('@uiw/codemirror-theme-github')['githubLight']
   const intercept: typeof import('mobx')['intercept']
+  const langs: typeof import('@uiw/codemirror-extensions-langs')['langs']
   const lazy: typeof import('react')['lazy']
   const Link: typeof import('react-router-dom')['Link']
   const makeAutoObservable: typeof import('mobx')['makeAutoObservable']
@@ -62,5 +66,7 @@ declare global {
   const useSyncExternalStore: typeof import('react')['useSyncExternalStore']
   const useTransition: typeof import('react')['useTransition']
   const when: typeof import('mobx')['when']
+  const xcodeDark: typeof import('@uiw/codemirror-theme-xcode')['xcodeDark']
+  const xcodeLight: typeof import('@uiw/codemirror-theme-xcode')['xcodeLight']
 }
 export {}

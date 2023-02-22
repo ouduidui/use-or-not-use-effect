@@ -10,7 +10,7 @@
   },
   "author": "Dewey Ou <oushihao97@gmail.com>",
   "scripts": {
-    "build": "vite build",
+    "build": "vite build --mode development",
     "dev": "vite",
     "format": "eslint \"**/*.{vue,ts,js}\" --fix",
     "lint": "eslint \"**/*.{vue,ts,js}\"",
@@ -18,6 +18,10 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@uiw/codemirror-extensions-langs": "^4.19.9",
+    "@uiw/codemirror-theme-github": "^4.19.9",
+    "@uiw/codemirror-theme-xcode": "^4.19.9",
+    "@uiw/react-codemirror": "^4.19.9",
     "mobx": "^6.5.0",
     "mobx-persist-store": "^1.0.6",
     "mobx-react-lite": "^3.3.0",

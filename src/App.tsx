@@ -7,7 +7,7 @@ import routes from '~react-pages'
 export default function App() {
   return (
     <main className="font-sans flex flex-col min-h-screen text-center text-gray-700 dark:text-gray-200">
-      <div className="flex-1 container pt-10 m-auto">
+      <div className="flex-1 container pt-20 m-auto">
         <Router>
           <Routes />
         </Router>
