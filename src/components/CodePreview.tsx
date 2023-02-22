@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 import useDark from '~/hooks/useDark'
 
 export const CodePreview = (props: { code: string }) => {
@@ -7,6 +8,11 @@ export const CodePreview = (props: { code: string }) => {
 
   const { isDark } = useDark()
   const theme = useMemo(() => isDark ? githubDark : githubLight, [isDark])
-  // eslint-disable-next-line react/jsx-no-undef
-  return <CodeMirror className="text-left text-xl" extensions={[langs.tsx()]} theme={theme} value={code} />
+
+  return (
+    <div className="text-left text-xl mb-10 w-full">
+      <div className="pb-3">Code :</div>
+      <CodeMirror extensions={[langs.tsx()]} theme={theme} value={code} />
+    </div>
+  )
 }
