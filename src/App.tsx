@@ -8,7 +8,7 @@ export default function App() {
   return (
     <main className="font-sans flex flex-col min-h-screen text-center text-gray-700 dark:text-gray-200">
       <div className="flex-1 container pt-20 m-auto">
-        <Router>
+        <Router basename="/use-useEffect-or-not/">
           <Routes />
         </Router>
       </div>
