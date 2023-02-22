@@ -9,7 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/use-useEffect-or-not/',
+  base: '/use-or-not-use-effect/',
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
