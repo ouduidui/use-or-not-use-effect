@@ -1,8 +1,6 @@
-/* eslint-disable no-console */
-/* eslint-disable no-alert */
-
-const NAV = [
-  { label: 'Double Mounted', path: '/double-mounted' },
+const DEMO_NAV = [
+  { label: 'Double Mounted', path: '/demo/double-mounted' },
+  { label: 'Setup and Cleanup', path: '/demo/setup-and-cleanup' },
 ]
 const Index = () => {
   const nav = useNavigate()
@@ -12,14 +10,15 @@ const Index = () => {
       <div className="text-3xl mb-15">USE OR NOT USER EFFECT</div>
       <section>
         <div className="text-2xl mb-3">DEMO SHOW</div>
+
         {
-          NAV.map(({ label, path }) =>
+          DEMO_NAV.map(({ label, path }) =>
             <div
-              className="text-xl p-1 mb-5 b-b op-80 hover:op-100 cursor-pointer"
+              className="mb-5 "
               key={path}
               onClick={() => nav(path)}
             >
-              {label}
+              <span className="text-xl p-1 b-b op-80 hover:op-100 cursor-pointer">{label}</span>
             </div>,
           )
         }

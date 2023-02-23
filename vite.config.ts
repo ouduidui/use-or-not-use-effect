@@ -6,12 +6,15 @@ import Pages from 'vite-plugin-pages'
 import AutoImport from 'unplugin-auto-import/vite'
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   base: '/use-or-not-use-effect/',
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
     },
+  },
+  define: {
+    __DEV__: command !== 'build',
   },
   plugins: [
     // https://github.com/antfu/unocss
@@ -57,4 +60,4 @@ export default defineConfig({
   server: {
     host: true,
   },
-})
+}))

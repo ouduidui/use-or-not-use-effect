@@ -10,7 +10,7 @@ export const CodePreview = (props: { code: string }) => {
   const theme = useMemo(() => isDark ? githubDark : githubLight, [isDark])
 
   return (
-    <div className="text-left text-xl mb-10 w-full">
+    <div className="text-left text-xl mb-10 w-screen-md">
       <div className="pb-3">Code :</div>
       <CodeMirror extensions={[langs.tsx()]} theme={theme} value={code} />
     </div>
