@@ -10,7 +10,7 @@ export default function Footer() {
       <a
         className="icon-btn i-carbon-logo-github"
         rel="noreferrer"
-        href="https://github.com/ouduidui"
+        href="https://github.com/ouduidui/use-or-not-use-effect"
         target="_blank"
         title="GitHub"
       />

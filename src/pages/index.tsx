@@ -9,13 +9,21 @@ const Index = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      {
-        NAV.map(({ label, path }) =>
-          <div className="text-xl p-1 mb-5 op-80 hover:op-100 cursor-pointer" key={path} onClick={() => nav(path)}>
-            {label}
-          </div>,
-        )
-      }
+      <div className="text-3xl mb-15">USE OR NOT USER EFFECT</div>
+      <section>
+        <div className="text-2xl mb-3">DEMO SHOW</div>
+        {
+          NAV.map(({ label, path }) =>
+            <div
+              className="text-xl p-1 mb-5 b-b op-80 hover:op-100 cursor-pointer"
+              key={path}
+              onClick={() => nav(path)}
+            >
+              {label}
+            </div>,
+          )
+        }
+      </section>
     </div>
   )
 }
